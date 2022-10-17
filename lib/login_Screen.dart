@@ -2,8 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testing4_for_flutter/add_user_screen.dart';
+import 'package:testing4_for_flutter/for_test/views/list_pepole_screen.dart';
 import 'package:testing4_for_flutter/home_screen.dart';
 import 'package:testing4_for_flutter/insert_data.dart';
+import 'package:testing4_for_flutter/local_data.dart';
 import 'package:testing4_for_flutter/register_Screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -186,7 +188,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (_) => HomeScreenAdd(),
+            builder: (_) => ListPeopleScreen(),
           ),
         );
       });
